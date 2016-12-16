@@ -1,0 +1,110 @@
+Xft.dpi: 84
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+xvt*termName: rxvt-unicode-256color
+
+URxvt.geometry: 140x30
+!URxvt.transparent: True
+!URxvt.shading: 15
+URxvt.fading: 30
+!URxvt.background: #333333
+URxvt.background: #2b221e
+!URxvt.background: #382b27
+!URxvt.foreground: #DDDDDD
+
+xterm*faceName: DejaVu Sans Mono Book
+xterm*faceSize: 15
+
+! 0: black
+!URxvt.color0: #333333
+!URxvt.color8: #333333
+! 1: red
+!URxvt.color1: #f44336
+!URxvt.color9: #f44336
+! 2: green
+!URxvt.color2: #4caf50
+!URxvt.color10: #4caf50
+! 3: yellow
+!URxvt.color3:  #ffeb3b
+!URxvt.color11: #ffeb3b
+! 4: blue
+!URxvt.color4:  #2196f3
+!URxvt.color12: #2196f3
+! 5: magenta (material pink)
+!URxvt.color5:  #e91e63
+!URxvt.color13: #e91e63
+! 6: cyan
+!URxvt.color6:  #00bcd4
+!URxvt.color14: #00bcd4
+! 7: white
+!URxvt.color7:  #DDDDDD
+!URxvt.color15: #DDDDDD
+
+urxvt.foreground: white
+!urxvt.background: black
+
+urxvt.color0:  #2E3436
+urxvt.color1:  #a40000
+urxvt.color2:  #4E9A06
+urxvt.color3:  #C4A000
+urxvt.color4:  #3465A4
+urxvt.color5:  #75507B
+urxvt.color6:  #ce5c00
+urxvt.color7:  #babdb9
+urxvt.color8:  #555753
+urxvt.color9:  #EF2929
+urxvt.color10: #8AE234
+urxvt.color11: #FCE94F
+urxvt.color12: #729FCF
+urxvt.color13: #AD7FA8
+urxvt.color14: #fcaf3e
+urxvt.color15: #EEEEEC
+
+
+URxvt.thickness: 1
+URxvt.scrollBar: off
+URxvt.iso14755: False
+!URxvt.font: xft:bitstream vera sans mono:size=12:antialias=true
+!URxvt.font: xft:Roboto Mono Medium for Powerline:size=12:antialias=true
+!URxvt.imFont: xft:Roboto Mono Medium for Powerline:size=12:antialias=true
+!URxvt.boldFont: xft:Roboto Mono Medium for Powerline:size=12:antialias=true
+!URxvt.italicFont: xft:Roboto Mono Medium for Powerline:size=12:antialias=true
+!URxvt.boldItalicFont: xft:Roboto Mono Medium for Powerline:size=12:antialias=true
+!URxvt.letterSpace: -1
+!Urxvt.font:xft:inconsolata:pixelsize=15
+!URxvt.boldFont:xft:inconsolata:pixelsize=15
+!URxvt.italicFont:       xft:inconsolata:pixelsize=13:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=13:antialias=true,hinting=true
+!URxvt.bolditalicFont:   xft:inconsolata:pixelsize=13:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=13:antialias=true,hinting=true
+!Urxvt.font:xft:DejaVu\ Sans\ Mono:bold:size=14:antialias=true,xft:DejaVu\ Sans\ Mono\ for\ Powerline:bold:size=14:antialias=true
+!urxvturxvt.font: xft:Terminum:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize-12
+!URxvt.font: xft:Inconsolata:regular:pixelsize=15:antialias=true:hinting=true, xft:DejaVu\ Sans\ Mono\ for\ Powerline:regular:size=14:antialias=true
+!URxvt.boldfont: xft:Inconsolata:regular:pixelsize=15,xft:DejaVu\ Sans\ Mono\ for\ Powerline:bold:size=14:antialias=true
+!URxvt.font:             xft:Menslo:pixelsize=15, xft:dejavu sans mono:pixelsize=13:antialias=true,hinting=true
+!URxvt.boldFont:         xft:Menslo:pixelsize=15, xft:dejavu sans mono:pixelsize=13:antialias=true,hinting=true
+
+URxvt*imLocale: en_US.UTF-8
+!URxvt.letterSpace: 5
+
+urxvt.perl-lib: /usr/lib/urxvt/perl/
+urxvt.perl-ext-common: default.matcher
+URxvt.urlLauncher: /usr/bin/chromium-browser
+urxvt.matcher.button: 1
+urxvt.matcher.pattern.1: \\bwww\\.[\\w-]+\\.[\\w./?&@#-]urxvt.[\\w/-]
+
+!rofi.terminal: 'urxvt256c'
+!rofi.case-sensitive: false
+!rofi.sidebar-mode: true
+!rofi.location: 0
+!rofi.width: 30
+!rofi.padding: 12
+!rofi.borderwidth: 10
+!rofi.lines: 40
+!rofi.bg: #2b221e
+!rofi.fg: #A0A0A0
+!rofi.bordercolor: #FF0000
+!rofi.color-normal: #333333,#C0C0C0,#222222,#2196F3,#000000
+!rofi.color-window: #111111, #111111
