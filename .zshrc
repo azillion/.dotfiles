@@ -1,15 +1,21 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+export PATH=$HOME/bin:/usr/local/bin:/home/azillion/.local/bin:$PATH
+. /home/azillion/.local/bin
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/azillion/.oh-my-zsh
+export ZSH=/home/azillion/.oh-my-zsh
+DEFAULT_USER="azillion"
+POWERLINE_HIDE_HOST_NAME="true"
+POWERLINE_HIDE_USER_NAME="true"
+POWERLINE_PATH="short"
+POWERLINE_DETECT_SSH="true"
 
-
-TERM=xterm
+TERM=xterm-256color
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="powerline"
+#ZSH_THEME="aussiegeek"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -53,7 +59,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize sublime vundle web-search virtualenv)
+plugins=(git-prompt colorize sublime better-virtualenv workenv docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,6 +96,12 @@ export LANG=en_US.UTF-8
 #
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
+alias hyperconfig="vim ~/.hyper.js"
 alias apps="cd /apps/"
 alias hyper="/opt/Hyper/hyper"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias sublime="subl"
+alias webstorm="/opt/WebStorm-163.9166.30/bin/webstorm.sh &"
+alias pycharm="/opt/pycharm-community-2016.3/bin/pycharm.sh &"
+
+source /home/azillion/.local/bin/activate.sh
