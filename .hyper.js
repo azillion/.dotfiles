@@ -4,10 +4,11 @@ module.exports = {
     fontSize: 15,
 
     // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", "Inconsolata", monospace',
+    //fontFamily: '"Meslo for Powerline", "DejaVu Sans Mono", Menlo, Inconsolata',
+    fontFamily: '"Meslo LG S for Powerline", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.8)',
+    cursorColor: 'rgba(229, 89, 52, 0.8)',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
@@ -38,7 +39,7 @@ module.exports = {
     showWindowControls: 'false',
 
     // custom padding (css format, i.e.: `top right bottom left`)
-    padding: '4px 14px 8px 0px',
+    padding: '16px 20px 16px 4px',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -64,7 +65,7 @@ module.exports = {
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
-    shell: '',
+    shell: 'zsh',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
     // by default ['--login'] will be used
@@ -74,7 +75,7 @@ module.exports = {
     env: {},
 
     // set to false for no bell
-    bell: 'SOUND',
+    bell: 'false',
 
     // if true, selected text will automatically be copied to the clipboard
     copyOnSelect: true
@@ -91,7 +92,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyper-snazzy', 'hyperline'],
+  plugins: ["hyperterm-cursor", "hyperline", "hyperminimal", "hyperterm-earthsong"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
