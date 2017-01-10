@@ -8,19 +8,19 @@ module.exports = {
     fontFamily: '"Meslo LG S for Powerline", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(229, 89, 52, 0.8)',
+    cursorColor: 'rgba(238, 78, 78, 1)',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
 
     // color of the text
-    foregroundColor: '#fff',
+    foregroundColor: '#b9b8cc',
 
     // terminal background color
-    backgroundColor: '##2c3e50',
+    backgroundColor: '#191840',
 
     // border color (window, tabs)
-    borderColor: '#333',
+    borderColor: '#FF7530',
 
     // custom css to embed in the main window
     css: '',
@@ -45,23 +45,41 @@ module.exports = {
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
     colors: {
-      black: '#000000',
-      red: '#e74c3c',
-      green: '#33ff00',
-      yellow: '#ffff00',
-      blue: '#0066ff',
-      magenta: '#cc00ff',
-      cyan: '#00ffff',
-      white: '#d0d0d0',
-      lightBlack: '#808080',
-      lightRed: '#ff0000',
-      lightGreen: '#33ff00',
-      lightYellow: '#ffff00',
-      lightBlue: '#0066ff',
-      lightMagenta: '#cc00ff',
-      lightCyan: '#00ffff',
-      lightWhite: '#ffffff'
+      black: '#19194b',
+      red: '#c1193a',
+      green: '#1ca974',
+      yellow: '#FF4D4E',
+      blue: '#3f3fbd',
+      magenta: '#9a286d',
+      cyan: '#19c1a0',
+      white: '#d6d6e1',
+      lightBlack: '#757593',
+      lightRed: '#e6a3b6',
+      lightGreen: '#8bc9b2',
+      lightYellow: '#ff7071',
+      lightBlue: '#7777d2',
+      lightMagenta: '#ce4196',
+      lightCyan: '#40e6c6',
+      lightWhite: '#efeff4'
     },
+    //colors: {
+    //color: '#18184a',
+    //color: '#831a45',
+    //color: '#131639',
+    //color: '#191840',
+    //color: '#ee4e4e',
+    //color: '#d8174c',
+    //color: '#261740',
+    //color: '#931846',
+    //red: '#b51747',
+    //color: '#3b1840',
+    //color: '#727098',
+    //black: '#19194b',
+    //white: '#b9b8cc',
+    //green: '#931846',
+    //blue: '#6A85B0',
+    //yellow: '#FF4D4E',
+    //},
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
@@ -92,7 +110,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyperterm-cursor", "hyperline", "hyperminimal", "hyperterm-earthsong"],
+  plugins: ["hyperterm-cursor", "hyperminimal"], //, "hyperterm-earthsong"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
