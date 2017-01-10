@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/home/azillion/.local/bin:$PATH
-. /home/azillion/.local/bin
+export PATH=$HOME/bin:/usr/local/bin:/home/azillion/.local/bin:$PATH:/home/azillion/.local/lib
+
 # Path to your oh-my-zsh installation.
 export ZSH=/home/azillion/.oh-my-zsh
 DEFAULT_USER="azillion"
@@ -59,7 +59,7 @@ ZSH_THEME="powerline"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git-prompt colorize sublime better-virtualenv workenv docker)
+plugins=(git-prompt colorize sublime better-virtualenv workenv docker zsh-navigation-tools history-subsearch-string)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,5 +103,15 @@ alias hyper="/opt/Hyper/hyper"
 alias sublime="subl"
 alias webstorm="/opt/WebStorm-163.9166.30/bin/webstorm.sh &"
 alias pycharm="/opt/pycharm-community-2016.3/bin/pycharm.sh &"
+alias bars="/home/azillion/.config/polybar/launch.sh"
+
+eval $(dircolors ~/.dircolors)
 
 source /home/azillion/.local/bin/activate.sh
+
+c() {
+    dir="$(dirlog-cd "$@")"
+        if [ "$dir" != ""  ]; then
+        cd "$dir" && ls -la
+    fi
+    }
